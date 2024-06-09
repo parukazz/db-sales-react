@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -9,7 +9,6 @@ import Paper from '@mui/material/Paper';
 import { Container, TablePagination } from "@mui/material";
 
 const SalesTable = ({ sales }) => {
-  const [searchTerm, setSearchTerm] = useState('');
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowPerPage] = useState(5);
 
