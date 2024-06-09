@@ -6,7 +6,7 @@ const SearchBar = ({ setSearchQuery }) => {
   };
 
   return (
-    <input type="text" placeholder="Cari Produk..." onChange={handleSearch} />
+    <input className="search-bar" type="text" placeholder="Cari Produk..." onChange={handleSearch} />
   );
 };
 
