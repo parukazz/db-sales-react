@@ -7,9 +7,9 @@ const Statistics = ({ sales }) => {
 
   return (
     <div>
-      <h2>Statistics</h2>
-      <p>Total Sales: {totalSales}</p>
-      <p>Total Revenue: {totalRevenue}</p>
+      <h2>Statistik Penjualan</h2>
+      <p>Total Penjualan: {totalSales}</p>
+      <p>Total Pendapatan: {totalRevenue}</p>
       <p>Best Selling Product: {bestProduct ? bestProduct.product : 'N/A'}</p>
     </div>
   );
