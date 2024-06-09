@@ -5,7 +5,7 @@ import { LineChart, Line, CartesianGrid, XAxis, YAxis, Legend, BarChart, Bar } f
 const SalesChart = ({ sales }) => {
   return (
     <div>
-      <h2>Sales Trends</h2>
+      <h2>Tren Penjualan</h2>
       <LineChart width={600} height={300} data={sales}>
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="date" />
@@ -15,7 +15,7 @@ const SalesChart = ({ sales }) => {
       <Line type="monotone" dataKey="sales" stroke="#8884d8" />
       </LineChart>
 
-      <h2>Product Comparison</h2>
+      {/* Tabel Batang */}
       <BarChart width={600} height={300} data={sales}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="product" />
