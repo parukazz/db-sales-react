@@ -6,11 +6,28 @@ const Statistics = ({ sales }) => {
   const bestProduct = sales.reduce((max, sale) => sale.sales > max.sales ? sale : max, sales[0]);
 
   return (
-    <div>
-      <h2>Statistik Penjualan</h2>
-      <p>Total Penjualan: {totalSales}</p>
-      <p>Total Pendapatan: {totalRevenue}</p>
-      <p>Best Selling Product: {bestProduct ? bestProduct.product : 'N/A'}</p>
+    <div className="statistics-wrapper">
+      <div className="card-statistics">
+        <img className="icon-stat" src="/assets/img/icon-buy.png" alt="Buy Icon" />
+        <div className="desc">
+          <h3>{totalSales}</h3>
+          <p>Total Penjualan</p>
+        </div>
+      </div>
+      <div className="card-statistics">
+        <img className="icon-stat" src="/assets/img/icon-sell.png" alt="Sell Icon" />
+        <div className="desc">
+          <h3>{totalRevenue}</h3>
+          <p>Total Pendapatan</p>
+        </div>
+      </div>
+      <div className="card-statistics">
+        <img className="icon-stat" src="/assets/img/icon-favorite.png" alt="Favorite Icon" />
+        <div className="desc">
+          <h3>{bestProduct ? bestProduct.product : 'N/A'}</h3>
+          <p>Best Selling Product</p>
+        </div>
+      </div>
     </div>
   );
 };
