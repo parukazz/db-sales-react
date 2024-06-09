@@ -134,3 +134,74 @@ h2.title {
   margin-bottom: 30px;
   font-size: 1.5rem;
 }
+
+/* < Phone Version */
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+
+  h2.title {
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
+  .date-search-container {
+    margin-right: 10px;
+  }
+
+  .date-search-container,
+  .date-search-container .date-wrapper {
+    gap: 10px;
+  }
+
+  .date-search-container .date-input {
+    font-size: 10px;
+  }
+
+  .date-search-container .search-bar {
+    font-size: 10px;
+    width: 100px;
+  }
+
+  .statistics-wrapper,
+  .diagram-wrapper {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .statistics-wrapper {
+    gap: 15px;
+  }
+
+  .statistics-wrapper .card-statistics {
+    flex-direction: column;
+    padding: 0;
+    padding-block: 20px;
+    gap: 15px;
+    border-radius: 8px;
+  }
+
+  .statistics-wrapper .card-statistics .icon-stat {
+    width: 60px;
+    height: 60px;
+  }
+
+  .statistics-wrapper .card-statistics .desc {
+    text-align: center;
+  }
+
+  .statistics-wrapper .card-statistics .desc h3 {
+    font-size: 2rem;
+  }
+
+  .statistics-wrapper .card-statistics .desc p {
+    font-size: 16px;
+  }
+
+  .diagram-wrapper .chart-box {
+    padding: 0;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+}
