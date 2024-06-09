@@ -205,3 +205,28 @@ h2.title {
     padding-top: 10px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+  h2.title {
+    margin-left: 10px;
+  }
+
+  .date-search-container {
+    margin-right: 10px;
+  }
+
+  .statistics-wrapper,
+  .diagram-wrapper {
+    flex-direction: column;
+  }
+
+  .statistics-wrapper .card-statistics {
+    width: 700px;
+    justify-content: center;
+    margin-left: 30px;
+  }
+}
