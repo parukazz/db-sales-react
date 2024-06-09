@@ -4,27 +4,31 @@ import { LineChart, Line, CartesianGrid, XAxis, YAxis, Legend, BarChart, Bar } f
 
 const SalesChart = ({ sales }) => {
   return (
-    <div>
-      <h2>Tren Penjualan</h2>
-      <LineChart width={600} height={300} data={sales}>
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="date" />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <Line type="monotone" dataKey="sales" stroke="#8884d8" />
-      </LineChart>
+    <div className="diagram-wrapper">
+      <div className="chart-box">
+        <h3>Tren Penjualan</h3>
+        <LineChart width={600} height={400} data={sales}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="date" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Line type="monotone" dataKey="sales" stroke="#8884d8" />
+        </LineChart>
+      </div>
 
       {/* Tabel Batang */}
-      <BarChart width={600} height={300} data={sales}>
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="product" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Bar dataKey="sales" fill="#8884d8" />
-        <Bar dataKey="revenue" fill="#82ca9d" />
-      </BarChart>
+      <div className="chart-box">
+        <h3>Komparasi Produk</h3>
+        <BarChart width={600} height={500} data={sales}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="product" stroke="#8884d8" />
+          <YAxis />
+          <Legend width={100} wrapperStyle={{ top: 40, right: 20, backgroundColor: '#f5f5f5', border: '1px solid #d5d5d5', borderRadius: 3, lineHeight: '40px' }} />
+          <Bar dataKey="sales" fill="#8884d8" />
+          <Bar dataKey="revenue" fill="#82ca9d" />
+        </BarChart>
+      </div>
     </div>
   );
 };
