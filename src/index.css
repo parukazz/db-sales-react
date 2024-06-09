@@ -13,11 +13,17 @@ body,
 .App {
   width: 100%;
   height: 100%;
+  background-color: #FAFAFA;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  width: 1320px;
+  margin: auto;
 }
 
 h1 {
@@ -28,4 +34,103 @@ h1 {
 h2 {
   font-weight: 600;
   font-size: 3rem;
+}
+
+h2.title {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+/* Component Date & Search */
+.date-search-container {
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  margin-bottom: 25px;
+}
+
+.date-search-container .date-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.date-search-container .date-input {
+  font-size: 14px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+}
+
+.date-search-container .search-bar {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* Component Statistics */
+.statistics-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.statistics-wrapper .card-statistics {
+  background-color: #ffffff;
+  display: flex;
+  padding: 40px 40px;
+  gap: 30px;
+  align-items: center;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statistics-wrapper .card-statistics .icon-stat {
+  width: 92px;
+  height: 92px;
+}
+
+.statistics-wrapper .card-statistics .desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.statistics-wrapper .card-statistics .desc h3 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 0;
+}
+
+.statistics-wrapper .card-statistics .desc p {
+  font-size: 20px;
+  line-height: 0;
+}
+
+.diagram-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 30px;
+}
+
+.diagram-wrapper .chart-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 40px;
+  padding-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+
+}
+
+.diagram-wrapper .chart-box .desc h3 {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
 }
