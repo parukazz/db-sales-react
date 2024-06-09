@@ -24,7 +24,7 @@ const SalesTable = ({ sales }) => {
   const paginatedSales = sales.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage);
 
   return (
-    <Container maxWidth="md">
+    <Container maxWidth="lg">
       <TableContainer component={Paper}>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
