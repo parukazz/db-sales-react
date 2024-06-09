@@ -35,12 +35,16 @@ function App() {
 
   return (
     <div className="App">
-      <h2>Dashboard Analitik Penjualan</h2>
-      <DateFilter setDateRange={setDateRange} />
-      <SearchBar setSearchQuery={setSearchQuery} />
-      <Statistics sales={filteredSales} />
-      <SalesChart sales={filteredSales} />
-      <SalesTable sales={filteredSales} />
+      <div className="container">
+        <h2 className="title">Dashboard</h2>
+        <div className="date-search-container">
+          <SearchBar setSearchQuery={setSearchQuery} />
+          <DateFilter setDateRange={setDateRange} />
+        </div>
+        <Statistics sales={filteredSales} />
+        <SalesChart sales={filteredSales} />
+        <SalesTable sales={filteredSales} />
+      </div>
     </div>
   );
 }
