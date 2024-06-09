@@ -7,9 +7,9 @@ const DateFilter = ({ setDateRange }) => {
   };
 
   return (
-    <div>
-      <input type="date" name="start" onChange={handleDateChange} />
-      <input type="date" name="end" onChange={handleDateChange} />
+    <div className="date-wrapper">
+      <input className="date-input" type="date" name="start" onChange={handleDateChange} />
+      <input className="date-input" type="date" name="end" onChange={handleDateChange} />
     </div>
   );
 };
